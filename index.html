@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El hombre del piso de arriba </title>
+     <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <style>
+        body {
+            padding-top: 100px;
+        }
+        .contenido-container {
+            max-width: 1000px;
+            margin: 32px auto;
+            padding: 32px;
+            border: 1px solid #ddd;
+        }
+        .card {
+            margin-bottom: 32px;
+            padding: 32px
+        } 
+
+    
+    
+         nav.border {
+        padding: 10px 0 !important; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }  
+    .nav-list {
+        display: flex !important;  
+        flex-direction: row;       
+        margin: 0;                 
+        padding: 0;
+    }
+    .nav-list li {
+        list-style: none;          
+        margin: 0 5px;             
+    }
+
+    .nav-list li a.paper-btn {
+        padding: 0.4rem 1rem;      
+        font-size: 1rem;           
+    }
+    iframe {       
+        aspect-ratio: 4 / 3;       
+        display: block;        
+        margin: 0 auto;  
+        border: none;      
+    }
+#integrantes .col-4 {
+    display: flex;
+    justify-content: center;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="border fixed split-nav">
+        <div class="nav-brand"></div>
+        <div class="nav-list-container">
+            <ul class="nav-list">
+                <li><a href="#integrantes" class="paper-btn">Integrantes</a></li>
+                <li><a href="#portada" class="paper-btn">Portada</a></li>
+                <li><a href="#comoloarmamos" class="paper-btn">Como lo armamos</a></li>
+                <li><a href="#juego" class="paper-btn">Juego</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="contenido-container">
+
+        <section id="titulo" class="row margin-extra-large">
+            <div class="col-12 text-center">
+                  <h1>Ray Bradbury - El hombre del piso de arriba</h1>
+                <h1>Aventura Gráfica</h1>
+
+                <p>Descubrí la verdadera identidad de Koberman.</p>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <section id="integrantes" class="row text-center">
+            <div class="col-12">
+                <h2>Integrantes</h2>
+            </div>
+
+            <div class="col-4 col-sm-12 margin-right-large">
+                <div class="card">
+                    <h4 class="card-title">Agustin Lasarte</h4>
+                </div>
+            </div>
+
+            <div class="col-4 col-sm-12">
+                <div class="card">
+                    <h4 class="card-title">Pedro Ramella</h4>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        
+        <section id="portada" class="row">
+            <div class="col-12">
+                <img src="imagenes/Ray-Bradbury-El-hombre-del-piso-de-arriba.png" 
+                     alt="Portada El hombre del piso de arriba" 
+                     class="portada-cuento">
+            </div>
+        </section>
+
+        <hr>
+
+        
+        <section id="comoloarmamos" class="row">
+            <div class="col-6 col-sm-12">
+                <h3>¿Cómo lo armamos?</h3>
+                <p>Elegimos El hombre del piso de arriba según nuestros gustos y la disponibilidad de cuentos. Luego creamos el diagrama basándonos en la historia original e incorporando finales buenos y malos. En nuestra primera juntada realizamos las imágenes y armamos la estructura de carpetas, y en la segunda nos dedicamos a programar la aventura gráfica. Finalmente, con los sonidos, las imágenes y el código integrados, realizamos las pruebas del juego completo.</p>
+            </div>
+
+            <div class="col-6 col-sm-12">
+                <h3>"El hombre del piso de arriba" - Ray Bradbury</h3>
+                <p>Nuestra aventura gráfica se basa en el cuento de Bradbury, donde Douglas sospecha que el nuevo huésped no es humano, lo que lleva a un enfrentamiento cargado de tensión y misterio en la casa de su abuela.</p>
+            </div>
+        </section>
+
+        <hr>
+
+     
+        <section id="juego" class="row">
+            <div class="col-12 text-center">
+                <h2>Aventura Gráfica</h2>
+                <p>Click para comenzar</p>
+            </div>
+
+            <iframe src="carpetajuego/index.html" width="650" height="490"></iframe>
+        </section>
+
+    </main>
+
+    <footer class="text-center padding">
+        <p class="text-small">
+            Agustin Lasarte & Pedro Ramella - TP Final Programacion Web
+        </p>
+    </footer>
+
+</body>
+
+</html>
